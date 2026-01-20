@@ -1,0 +1,72 @@
+body {
+    background: #0a0a0a; /* dark black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #0f1f0f; /* dark greenish black body */
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 8px 15px rgba(1, 78, 40, 0.2); /* subtle green glow */
+}
+
+.display {
+    background: #000000; /* dark green display */
+    color: #d5f3d0; /* neon green numbers */
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12px;
+    box-shadow: inset 0 2px 5px rgba(0, 255, 128, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 55px;
+    background: #000000; /* dark green buttons */
+    color: #cee4ca; /* neon green text */
+    font-size: 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px #e1eee1; /* dark shadow */
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.operator {
+    background: #000000; /* darker green for operators */
+    box-shadow: 0 4px #d7dbd7;
+}
+
+.function {
+    background: #000300; /* greenish-red for C, DEL, % */
+    box-shadow: 0 4px #d3e4d3;
+}
+
+.equal {
+    background: #010501; /* greenish equal button */
+    box-shadow: 0 4px #d9dfd9;
+}
+
+.zero {
+    grid-column: span 2;
+}
